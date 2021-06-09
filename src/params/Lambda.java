@@ -2,7 +2,7 @@ package params;
 
 public class Lambda {
 
-    public static double LAMBDA_MIN = 0.8;
+    public static double LAMBDA_MIN = 0.9;
     public static double LAMBDA_MAX = 1;
 
     public static double getRandom(){

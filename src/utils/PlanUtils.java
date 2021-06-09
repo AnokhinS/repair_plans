@@ -1,17 +1,10 @@
 package utils;
 
 import beans.Brigade;
-import beans.Repair;
 import beans.Well;
-import calc.Calculations;
 import common.Constants;
-import common.WellPriority;
-import coordination.Coordination;
-import methods.NaiveSortSolution;
 
-import java.math.BigDecimal;
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class PlanUtils {

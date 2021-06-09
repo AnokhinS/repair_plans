@@ -6,109 +6,99 @@ import calc.Calculations;
 import common.Constants;
 import common.Logger;
 import common.WellPriority;
+import info.Info;
 import methods.NaiveSortSolution;
 import methods.RandomMethod;
 import methods.SwarmSolution;
+import params.Lambda;
+import params.Phi;
 import plans.RandomPlan;
 
-import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 
 public class SwarmTest {
-    static int countBetter = 0;
-    static int countWorse = 0;
-    static int brokenPlans = 0;
-
-    static List<Double> worseList = new ArrayList<>();
-    static List<Double> betterList = new ArrayList<>();
+    static Info naiveInfo = new Info();
+    static Info randomChoiceInfo = new Info();
+    static Info swarmInfo = new Info();
 
     public static int tests = 1000;
 
+    private static List<RandomPlan> problems = new ArrayList<>();
+
+
     public static void main(String[] args) {
+        for (int i = 0; i < tests; i++) {
+            RandomPlan rp = new RandomPlan();
+            problems.add(rp);
+
+            long start = System.currentTimeMillis();
+            double naiveProfit = getNaiveProfit(rp.getWells());
+            long end = System.currentTimeMillis();
+            naiveInfo.addTime(end-start);
+            naiveInfo.addValue(naiveProfit);
+        }
+        parallel(getRandomChoiceFunction(),randomChoiceInfo);
+
+
+
+
 //        for (int i = 0; i < 1; i++) {
-//            getRun(1).run();
+//            getRun(problems).run();
+//            logStat();
 //        }
 
 
 //        findBestParams();
 //        agentCount();
 //        problemSize();
-
-        Constants.CLUSTER_SIZE = Constants.BRIGADE_COUNT * Constants.WELL_COUNT;
-        parallel();
+//        iterationCount();
+//        Constants.CLUSTER_SIZE = Constants.BRIGADE_COUNT * Constants.WELL_COUNT;
+        parallel(getSwarmFunction(),swarmInfo);
         logStat();
-        printStat();
-
-    }
-
-    private static void printStat() {
-        System.out.println("worse = " + countWorse);
-        System.out.println("better = " + countBetter);
-        System.out.println("WORSE LIST");
-        System.out.println(worseList);
-        if (!worseList.isEmpty()) {
-            double sum = worseList.stream().reduce(0d, (x, y) -> x+y);
-            System.out.println("min = " + worseList.stream().min(Double::compareTo));
-            System.out.println("avg = " + (sum/worseList.size()));
-            System.out.println("max = " + worseList.stream().max(Double::compareTo));
-        }
-
-        System.out.println("Better List");
-        System.out.println(betterList);
-        if (!betterList.isEmpty()) {
-            double sum = betterList.stream().reduce(0d, (x, y) -> x+y);
-            double avg = sum/betterList.size();
-            System.out.println("min = " + betterList.stream().min(Double::compareTo));
-            System.out.println("avg = " + avg);
-            System.out.println("max = " + betterList.stream().max(Double::compareTo));
-        }
-
 
     }
 
     private static void logStat() {
-        Logger.writeMsg("worse = " + countWorse);
+        System.out.println("Naive Info  "+naiveInfo);
+        System.out.println("Random Info  "+randomChoiceInfo);
+        System.out.println("Swarm Info  "+swarmInfo);
 
-        Logger.writeMsg("better = " + countBetter);
-        Logger.writeMsg("WORSE LIST");
-        Logger.writeMsg(worseList.toString());
-        if (!worseList.isEmpty()) {
-            double sum = worseList.stream().reduce(0d, (x, y) -> x+y);
-            Logger.writeMsg("min = " + worseList.stream().min(Double::compareTo));
-            Logger.writeMsg("avg = " + sum/worseList.size());
-            Logger.writeMsg("max = " + worseList.stream().max(Double::compareTo));
-        }
-
-        Logger.writeMsg("Better List");
-        Logger.writeMsg(betterList.toString());
-        if (!betterList.isEmpty()) {
-            double sum = betterList.stream().reduce(0d, (x, y) -> x+y);
-            double avg = sum/betterList.size();
-            Logger.writeMsg("min = " + betterList.stream().min(Double::compareTo));
-            Logger.writeMsg("avg = " + avg);
-            Logger.writeMsg("max = " + betterList.stream().max(Double::compareTo));
-        }
-
+        Logger.writeMsg("Naive Info  "+naiveInfo);
+        Logger.writeMsg("Random Info  "+randomChoiceInfo);
+        Logger.writeMsg("Swarm Info  "+swarmInfo);
 
     }
 
     public static void agentCount() {
-        for (int i = 1; i <= 10; i++) {
+        List<Integer> sizes = Arrays.asList(1,2,5,8,10,15,20);
+
+
+        for (int i : sizes) {
             Constants.CLUSTER_SIZE = i * Constants.BRIGADE_COUNT * Constants.WELL_COUNT;
             System.out.println("i=" + i);
             Logger.writeMsg("i=" + i);
+            swarmInfo = new Info();
+            parallel(getSwarmFunction(),swarmInfo);
+            logStat();
+        }
+    }
 
-            countBetter = 0;
-            countWorse = 0;
-            worseList.clear();
-            betterList.clear();
-            parallel();
-            printStat();
+    public static void iterationCount() {
+        List<Integer> sizes = Arrays.asList(10,20,50,100);
+
+        for (int i : sizes) {
+            Constants.USELESS_ITERATIONS = i;
+            System.out.println("i=" + i);
+            Logger.writeMsg("i=" + i);
+            swarmInfo = new Info();
+            parallel(getSwarmFunction(),swarmInfo);
             logStat();
         }
     }
@@ -121,12 +111,8 @@ public class SwarmTest {
             System.out.println("wells = " + Constants.WELL_COUNT + "   brigs = " + Constants.BRIGADE_COUNT);
             Logger.writeMsg("wells = " + Constants.WELL_COUNT + "   brigs = " + Constants.BRIGADE_COUNT);
 
-            countBetter = 0;
-            countWorse = 0;
-            worseList.clear();
-            betterList.clear();
-            parallel();
-            printStat();
+            swarmInfo = new Info();
+            parallel(getSwarmFunction(),swarmInfo);
             logStat();
         }
     }
@@ -149,30 +135,35 @@ public class SwarmTest {
                 Constants.MUTATION_VALUE = j;
                 System.out.println("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
                 Logger.writeMsg("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
-
-                countBetter = 0;
-                countWorse = 0;
-                worseList.clear();
-                betterList.clear();
-                parallel();
-                printStat();
+                swarmInfo = new Info();
+                parallel(getSwarmFunction(),swarmInfo);
                 logStat();
             }
         }
 
 
-//                PhiTest.PHI_MIN = i;
-//                PhiTest.PHI_MAX = i + step;
-//                LambdaTest.LAMBDA_MIN = j;
-//                LambdaTest.LAMBDA_MAX = j + step;
-//                System.out.println("phi = [" + PhiTest.PHI_MIN + "," + PhiTest.PHI_MAX + "]");
-//                System.out.println("lambda = [" + LambdaTest.LAMBDA_MIN + "," + LambdaTest.LAMBDA_MAX + "]");
-
-
-//                Constants.MAX_PHI = i;
-//                Constants.MAX_LAMBDA = j;
-//                System.out.println("MAX_PHI = " + Constants.MAX_PHI + "  MAX_LAMBDA = " + Constants.MAX_LAMBDA);
-
+//        for (double i = 0; i <= 1; i += step) {
+//            for (double j = 0; j <= 1; j += step) {
+//
+//                Phi.PHI_MIN = 0;
+//                Phi.PHI_MAX = i;
+//                Lambda.LAMBDA_MIN=j;
+//                Lambda.LAMBDA_MAX=1;
+//                System.out.println("PHI = ["+ Phi.PHI_MIN+", "+ Phi.PHI_MAX+"]");
+//                System.out.println("Lambda = ["+ Lambda.LAMBDA_MIN+", "+ Lambda.LAMBDA_MAX+"]");
+//                Logger.writeMsg("PHI = ["+ Phi.PHI_MIN+", "+ Phi.PHI_MAX+"]");
+//                Logger.writeMsg("Lambda = ["+ Lambda.LAMBDA_MIN+", "+ Lambda.LAMBDA_MAX+"]");
+//
+////                Constants.MUTATION_CHANCE = i;
+////                Constants.MUTATION_VALUE = j;
+////                System.out.println("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
+////                Logger.writeMsg("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
+//
+//                swarmInfo =new Info();
+//                parallel(getSwarmFunction(),swarmInfo);
+//                logStat();
+//            }
+//        }
     }
 
     public static void awaitTerminationAfterShutdown(ExecutorService threadPool) {
@@ -187,62 +178,33 @@ public class SwarmTest {
         }
     }
 
-    public static Runnable getRun(int tests) {
-        return new Runnable() {
+    public static Function<List<RandomPlan>, Runnable> getSwarmFunction() {
+        return (subProblems)->new Runnable() {
             @Override
             public void run() {
-
-
-                for (int k = 0; k < tests; k++) {
-                    System.out.println(k);
-//                    Well.setCount(0);
-                    RandomPlan rp = new RandomPlan(Constants.BRIGADE_COUNT, Constants.WELL_COUNT, Constants.REPAIR_PERIOD, Constants.FULL_PERIOD);
-//                    rp.getWells().forEach(System.out::println);
-//                    CustomPlan rp = new CustomPlan();
-
-                    double naiveProfit = getNaiveProfit(rp.getBrigades(), rp.getWells());
-                    double randomChoiseProfit = getRandomChoiseProfit(rp.getBrigades(), rp.getWells());
-                    double swarmProfit = getSwarmProfit(rp.getBrigades(), rp.getWells());
-
-
-//                    rp.getWells().forEach(System.out::println);
-//                    System.out.println(best +"  "+sortProfit);
-//                    System.out.println(swarmSolutionBest+"  "+swarmProfit);
-
-                    if (naiveProfit > swarmProfit || randomChoiseProfit > swarmProfit) {
-                        countWorse++;
-                        rp.getWells().forEach(System.out::println);
-                        System.out.println("sort " + "  " + naiveProfit);
-                        System.out.println("random " + "  " + randomChoiseProfit);
-                        System.out.println("swarm " + "  " + swarmProfit);
-                        System.out.println("WORSE");
-                        double betterProfit = naiveProfit > randomChoiseProfit ? naiveProfit : randomChoiseProfit;
-                        worseList.add((betterProfit - swarmProfit) / betterProfit);
-                    }
-
-                    if (swarmProfit > naiveProfit && swarmProfit > randomChoiseProfit) {
-                        countBetter++;
-                        double betterProfit = naiveProfit > randomChoiseProfit ? naiveProfit : randomChoiseProfit;
-                        double profit = (swarmProfit - betterProfit) / betterProfit;
-                        betterList.add(profit);
-                    }
-
-//                    if (profit.compareTo(new double(0.05)) < 0) {
-//                        rp.getWells().forEach(System.out::println);
-//                        System.out.println(best);
-//                        System.out.println(swarmSolutionBest);
-//                    }
-//                    System.out.println("sort " + "  " + sortProfit);
-//                    System.out.println("swarm " + "  " + swarmProfit);
-
+                for (RandomPlan rp : subProblems) {
+                    System.out.println(problems.indexOf(rp));
+                    double swarmProfit = getSwarmProfit(rp.getWells());
+                    swarmInfo.addValue(swarmProfit);
                 }
-
-
             }
         };
     }
 
-    private static double getNaiveProfit(List<Brigade> brigadePlans, List<Well> wells) {
+    public static Function<List<RandomPlan>, Runnable> getRandomChoiceFunction() {
+        return (subProblems)->new Runnable() {
+            @Override
+            public void run() {
+                for (RandomPlan rp : subProblems) {
+                    double randomChoiseProfit = getRandomChoiseProfit(rp.getWells());
+                    randomChoiceInfo.addValue(randomChoiseProfit);
+                }
+            }
+        };
+    }
+
+
+    private static double getNaiveProfit(List<Well> wells) {
 //        List<Well> wells = new ArrayList<>();
 //        wells.add(new Well(5,40,90));
 //        wells.add(new Well(5,15,65));
@@ -265,7 +227,7 @@ public class SwarmTest {
         return sortProfit;
     }
 
-    private static double getRandomChoiseProfit(List<Brigade> brigadePlans, List<Well> wells) {
+    private static double getRandomChoiseProfit(List<Well> wells) {
 //        List<Well> wells = new ArrayList<>();
 //        wells.add(new Well(5,40,90));
 //        wells.add(new Well(5,15,65));
@@ -289,7 +251,7 @@ public class SwarmTest {
         return Calculations.calcProfit(brigades, wells);
     }
 
-    private static double getSwarmProfit(List<Brigade> brigadePlans, List<Well> wells) {
+    private static double getSwarmProfit(List<Well> wells) {
 //        List<Well> wells = new ArrayList<>();
 //        wells.add(new Well(5,40,90));
 //        wells.add(new Well(5,15,65));
@@ -312,20 +274,18 @@ public class SwarmTest {
         return swarmProfit;
     }
 
-    public static void parallel() {
+    public static void parallel(Function<List<RandomPlan>, Runnable> function, Info info) {
         int threads = 10;
         int count = tests / threads;
-        long start = System.currentTimeMillis();
+
         ExecutorService pool = Executors.newFixedThreadPool(threads);
+        long start = System.currentTimeMillis();
         for (int k = 0; k < threads; k++) {
-            pool.execute(getRun(count));
+            pool.execute(function.apply(problems.subList(k*count,k*count+count)));
         }
         awaitTerminationAfterShutdown(pool);
         long end = System.currentTimeMillis();
-//        System.out.println("TIME = " + (end - start));
-//        System.out.println("worse = " + countWorse);
-//        System.out.println("better = " + countBetter);
-
+        info.addTime(end-start);
     }
 }
 

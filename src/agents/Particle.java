@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SolutionAgent {
+public class Particle {
     private static int count = 0;
     private int id = count++;
 
@@ -22,7 +22,7 @@ public class SolutionAgent {
 
     private List<Well> wells;
 
-    public SolutionAgent(List<Well> wells) {
+    public Particle(List<Well> wells) {
         this.wells = wells;
         createRandom();
     }

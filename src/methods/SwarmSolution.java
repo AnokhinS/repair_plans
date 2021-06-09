@@ -1,20 +1,16 @@
 package methods;
 
 
-import agents.SolutionAgent;
+import agents.Particle;
 import beans.Brigade;
 import beans.Well;
 import calc.Calculations;
 import common.Constants;
 import common.WellPriority;
-import utils.MatrixUtils;
 import utils.PlanUtils;
-import utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class SwarmSolution {
     private List<Well> wells;
@@ -23,14 +19,14 @@ public class SwarmSolution {
         this.wells = wells;
     }
 
-    private SolutionAgent bestSolution = null;
+    private Particle bestSolution = null;
 
-    public SolutionAgent getBestSolution() {
+    public Particle getBestSolution() {
         return bestSolution;
     }
 
-    private SolutionAgent getAgent(List<Well> sorted) {
-        SolutionAgent agent = new SolutionAgent(wells);
+    private Particle getAgent(List<Well> sorted) {
+        Particle agent = new Particle(wells);
         double val = 1;
         double[] X = new double[wells.size()];
         for (Well w : sorted){
@@ -46,12 +42,12 @@ public class SwarmSolution {
         return agent;
     }
 
-    private void addNaiveAgents(List<SolutionAgent> cluster) {
+    private void addNaiveAgents(List<Particle> cluster) {
         List<Well> sorted = WellPriority.subDesc(wells);
-        SolutionAgent sortAgent = getAgent(sorted);
+        Particle sortAgent = getAgent(sorted);
         cluster.add(sortAgent);
 
-        SolutionAgent sortAgent2 = getAgent(WellPriority.subDivDesc(wells));
+        Particle sortAgent2 = getAgent(WellPriority.subDivDesc(wells));
         cluster.add(sortAgent2);
 
         double c1 = Calculations.calcProfit(PlanUtils.createPlan(sortAgent.getB(),wells), wells);
@@ -62,22 +58,22 @@ public class SwarmSolution {
     public List<Brigade> findBest() {
         int clusterSize = Constants.CLUSTER_SIZE;
 //                brigades.size() * wells.size();
-        List<SolutionAgent> cluster = new ArrayList<>();
-//        addNaiveAgents(cluster);
+        List<Particle> cluster = new ArrayList<>();
+        addNaiveAgents(cluster);
         for (int i = 0; i < clusterSize; i++) {
-            SolutionAgent ps = new SolutionAgent(wells);
-//            ps.print();
-            cluster.add(ps);
+            Particle p = new Particle(wells);
+//            p.print();
+            cluster.add(p);
             double v = bestSolution == null ? 0: bestSolution.bestProfit();
-            double v1 = ps.bestProfit();
+            double v1 = p.bestProfit();
             if (bestSolution == null || v1> v) {
-                bestSolution = ps;
+                bestSolution = p;
             }
         }
 //        System.out.println("Лучшее решение до поиска:");
 //        bestSolution.print();
 
-        for (SolutionAgent sol : cluster) {
+        for (Particle sol : cluster) {
             sol.initV(bestSolution.getB());
         }
 
@@ -88,7 +84,7 @@ public class SwarmSolution {
 
         int uselessSteps = 0;
         while (uselessSteps != Constants.USELESS_ITERATIONS) {
-            for (SolutionAgent sol : cluster) {
+            for (Particle sol : cluster) {
 
 //                System.out.println("Before search");
 //                System.out.println(Utils.toString(sol.getX()));

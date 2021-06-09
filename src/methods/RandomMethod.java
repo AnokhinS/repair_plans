@@ -3,11 +3,17 @@ package methods;
 import beans.Brigade;
 import beans.Well;
 import calc.Calculations;
+import common.Constants;
 import utils.PlanUtils;
 
 import java.util.*;
 
 public class RandomMethod {
+    private static int SMALL = 1000;
+    private static int MEDIUM = 6000;
+    private static int LARGE = 30000;
+
+
     private List<Well> wells;
 
     public RandomMethod(List<Well> wells) {
@@ -15,8 +21,16 @@ public class RandomMethod {
     }
 
     public List<Brigade> find(){
+        int count = SMALL;
+        if (Constants.WELL_COUNT == 32){
+            count = LARGE;
+        }
+        if (Constants.WELL_COUNT == 16){
+            count = MEDIUM;
+        }
+
         double[] best = null;
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < count; i++) {
             double[] X = getOne();
             double profit = Calculations.calcProfit(X, wells);
             if(best == null || profit> Calculations.calcProfit(best,wells)){

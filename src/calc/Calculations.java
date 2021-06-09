@@ -1,15 +1,11 @@
 package calc;
 
 import beans.Brigade;
-import beans.Repair;
 import beans.Well;
 import common.Constants;
-import utils.ArrayUtils;
 import utils.PlanUtils;
 
-import java.math.BigDecimal;
 import java.util.*;
-import java.util.function.Function;
 
 public class Calculations {
 
