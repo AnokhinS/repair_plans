@@ -12,10 +12,6 @@ public class RandomPlan {
     public static int count = 0;
     protected List<Well> wells = new ArrayList<>();
 
-    public RandomPlan(int brigadeCount, int wellCount, int repairPeriod, int fullPeriod) {
-        init();
-    }
-
     public RandomPlan(){
         init();
     }

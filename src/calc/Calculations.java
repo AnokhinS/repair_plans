@@ -31,16 +31,4 @@ public class Calculations {
         }
         return res;
     }
-
-    public static void main(String[] args) {
-        List<Well> wells = Arrays.asList(
-                new Well(5,5,16),
-                new Well(4,37,93),
-                new Well(3,24,49));
-        double[] X = {0,0.07,0.93};
-        double profit = Calculations.calcProfit(X, wells);
-        System.out.println(profit);
-    }
-
-
 }

@@ -13,7 +13,7 @@ import java.util.List;
 public class CustomPlan extends RandomPlan{
 
     public CustomPlan() {
-        super(Constants.BRIGADE_COUNT,Constants.WELL_COUNT,Constants.REPAIR_PERIOD,Constants.FULL_PERIOD);
+        super();
     }
 
     @Override

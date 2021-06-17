@@ -3,12 +3,12 @@ package beans;
 import common.Constants;
 
 public class Well {
-    private static int count =1;
+    private static int count =0;
     private int id = count++;
 
     private int repairDuration = (int)((Math.random()* Constants.REPAIR_PERIOD)+1);
     private double debetBefore = (int)((Math.random()*50)+1);
-    private double debetAfter =  (int)((Math.random()*2+1) * debetBefore);
+    private double debetAfter =  (int)((Math.random()+1) * debetBefore);
 
     public Well(int repairDuration, double debetBefore, double debetAfter) {
         this.repairDuration = repairDuration;

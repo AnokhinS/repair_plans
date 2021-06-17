@@ -10,23 +10,18 @@ import java.util.stream.Collectors;
 public class PlanUtils {
 
     public static List<Brigade> createPlan(double[] weights, List<Well> wells){
-//        Map<Double, List<Well>> map = new HashMap<>();
-//        for (int i = 0; i < weights.length; i++) {
-//            if(map.containsKey(weights[i])){
-//                map.get(weights[i]).add(wells.get(i));
-//            }
-//            else {
-//                map.put(weights[i], Arrays.asList(wells.get(i)));
-//            }
-//        }
-//        double[] sorted = Arrays.stream(weights).sorted().toArray();
-
         Map<Well, Double> map = new HashMap<>();
         for (int i = 0; i < wells.size(); i++) {
             map.put(wells.get(i),weights[i]);
         }
         List<Well> sortedWells = wells.stream().sorted(Collections.reverseOrder((w1,w2)->Double.compare(map.get(w1),map.get(w2)))).collect(Collectors.toList());
-        return createPlan(sortedWells);
+        List<Well> withoutNegative = new ArrayList<>(sortedWells);
+        for (Well w : sortedWells){
+            if(map.get(w) < 0){
+                withoutNegative.remove(w);
+            }
+        }
+        return createPlan(withoutNegative);
     }
 
     public static List<Brigade> createPlan(List<Well> wells){
@@ -41,19 +36,5 @@ public class PlanUtils {
             }
         }
         return brigades;
-    }
-
-
-    public static void main(String[] args) {
-        List<Well> wells = Arrays.asList(new Well(), new Well(), new Well());
-        wells.forEach(System.out::println);
-        System.out.println();
-        System.out.println();
-        double[] X = {0.3,0.2,0.5};
-        List<Brigade> plan = createPlan(X, wells);
-        for (Brigade b : plan){
-            b.getRepairedWells().forEach(System.out::println);
-            System.out.println();
-        }
     }
 }

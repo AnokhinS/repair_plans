@@ -42,7 +42,7 @@ public class SwarmSolution {
         return agent;
     }
 
-    private void addNaiveAgents(List<Particle> cluster) {
+    public void addNaiveAgents(List<Particle> cluster) {
         List<Well> sorted = WellPriority.subDesc(wells);
         Particle sortAgent = getAgent(sorted);
         cluster.add(sortAgent);
@@ -59,7 +59,11 @@ public class SwarmSolution {
         int clusterSize = Constants.CLUSTER_SIZE;
 //                brigades.size() * wells.size();
         List<Particle> cluster = new ArrayList<>();
-        addNaiveAgents(cluster);
+        if (Constants.WITH_TEACHER){
+            addNaiveAgents(cluster);
+        }
+
+
         for (int i = 0; i < clusterSize; i++) {
             Particle p = new Particle(wells);
 //            p.print();
@@ -95,6 +99,7 @@ public class SwarmSolution {
 
                 boolean needMutation = Math.random() < Constants.MUTATION_CHANCE;
                 int tries = 0;
+                double[] oldX = sol.getX();
                 if (needMutation) {
 //                    System.out.println("Before mutation");
 //                    System.out.println(Utils.toString(sol.getX()));
@@ -102,6 +107,9 @@ public class SwarmSolution {
                         sol.mutation();
                         if (sol.currentProfit() > sol.bestProfit()){
                             sol.setB(sol.getX());
+                        }
+                        else {
+                            sol.setX(oldX);
                         }
                     }
 

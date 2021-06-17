@@ -30,7 +30,7 @@ public class RandomMethod {
         }
 
         double[] best = null;
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i < 100; i++) {
             double[] X = getOne();
             double profit = Calculations.calcProfit(X, wells);
             if(best == null || profit> Calculations.calcProfit(best,wells)){

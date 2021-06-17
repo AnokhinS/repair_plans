@@ -3,6 +3,11 @@ package info;
 public class Info{
     private double value;
     private double time;
+    private int errors;
+
+    public void addError(){
+        errors++;
+    }
 
     public void addValue(double v) {
         value+=v;
@@ -22,9 +27,10 @@ public class Info{
 
     @Override
     public String toString() {
-        return "{" +
+        return "Info{" +
                 "value=" + value +
                 ", time=" + time +
+                ", errors=" + errors +
                 '}';
     }
 }

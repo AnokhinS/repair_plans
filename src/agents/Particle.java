@@ -100,9 +100,6 @@ public class Particle {
         V = ArrayUtils.add(ArrayUtils.mul(lambda1, V), ArrayUtils.mul(lambda2, ArrayUtils.add(ArrayUtils.mul(getPhi1(X, B, G), ArrayUtils.sub(B, X)),
                 ArrayUtils.mul(getPhi2(X, B, G), ArrayUtils.sub(G, X)))));
         X = ArrayUtils.add(X, V);
-        double[] oldX = X.clone();
-        double oldProfit = Calculations.calcProfit(X,wells);
-
 
         double currentProfit = currentProfit();
         double bestProfit = bestProfit();
