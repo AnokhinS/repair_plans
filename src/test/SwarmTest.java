@@ -38,7 +38,10 @@ public class SwarmTest {
 
     public static void repDur(){
         for (int j = 1; j < 10; j++) {
-            problems.clear();
+            for (int i = 0; i < tests; i++) {
+                RandomPlan rp = new RandomPlan();
+                problems.add(rp);
+            }
             naiveInfo = new Info();
             randomChoiceInfo = new Info();
             swarmInfo = new Info();
@@ -47,11 +50,8 @@ public class SwarmTest {
             Constants.REPAIR_PERIOD = (int) (j*0.1*Constants.FULL_PERIOD);
             System.out.println("rep = "+Constants.REPAIR_PERIOD);
             for (int i = 0; i < tests; i++) {
-                RandomPlan rp = new RandomPlan();
-                problems.add(rp);
-
                 long start = System.currentTimeMillis();
-                double naiveProfit = getNaiveProfit(rp.getWells());
+                double naiveProfit = getNaiveProfit(problems.get(i).getWells());
                 long end = System.currentTimeMillis();
                 naiveInfo.addTime(end-start);
                 naiveInfo.addValue(naiveProfit);
@@ -115,6 +115,9 @@ public class SwarmTest {
 
 
     public static void main(String[] args) {
+repDur();
+
+
 
 //        fullTest();
 //        for (int i = 0; i < tests; i++) {
@@ -128,12 +131,8 @@ public class SwarmTest {
 //            naiveInfo.addValue(naiveProfit);
 //        }
 //        parallel(getRandomChoiceFunction(),randomChoiceInfo);
-
-        for (int i = 0; i < tests; i++) {
-            RandomPlan rp = new RandomPlan();
-            problems.add(rp);
-        }
-        findBestParams();
+//        parallel(getFullSearchFunction(),fullSearchInfo);
+//        findBestParams();
 //        agentCount();
 //        problemSize();
 //        iterationCount();
@@ -157,27 +156,29 @@ public class SwarmTest {
     }
 
     public static void agentCount() {
-        List<Integer> sizes = Arrays.asList(1,2,5,10,20);
+        List<Integer> sizes = Arrays.asList(1,2,5,10,20,50);
 
         for (int i : sizes) {
             Constants.CLUSTER_SIZE = i * Constants.BRIGADE_COUNT * Constants.WELL_COUNT;
             System.out.println("i=" + i);
             Logger.writeMsg("i=" + i);
             swarmInfo = new Info();
-            parallel(getSwarmFunction(),swarmInfo);
+            fullSearchInfo = new Info();
+            parallel(getFullSwarmFunction(),swarmInfo);
             logStat();
         }
     }
 
     public static void iterationCount() {
-        List<Integer> sizes = Arrays.asList(10,20,50,100);
+        List<Integer> sizes = Arrays.asList(10,20,50,100,500);
 
         for (int i : sizes) {
             Constants.USELESS_ITERATIONS = i;
             System.out.println("i=" + i);
             Logger.writeMsg("i=" + i);
             swarmInfo = new Info();
-            parallel(getSwarmFunction(),swarmInfo);
+            fullSearchInfo = new Info();
+            parallel(getFullSwarmFunction(),swarmInfo);
             logStat();
         }
     }
@@ -198,22 +199,22 @@ public class SwarmTest {
 
     public static void findBestParams() {
         double step = 0.2;
-        for (double i = 0.2; i < 1; i += step) {
-            for (double j = 0.2; j < 1; j += step) {
+        for (double i = 0.2; i <= 1; i += step) {
+            for (double j = 0.2; j <= 1; j += step) {
 
-                Phi.PHI_MIN = i;
-                Phi.PHI_MAX = i+step;
-                Lambda.LAMBDA_MIN=j;
-                Lambda.LAMBDA_MAX=j+step;
-                System.out.println("PHI = ["+ Phi.PHI_MIN+", "+ Phi.PHI_MAX+"]");
-                System.out.println("Lambda = ["+ Lambda.LAMBDA_MIN+", "+ Lambda.LAMBDA_MAX+"]");
-                Logger.writeMsg("PHI = ["+ Phi.PHI_MIN+", "+ Phi.PHI_MAX+"]");
-                Logger.writeMsg("Lambda = ["+ Lambda.LAMBDA_MIN+", "+ Lambda.LAMBDA_MAX+"]");
+//                Phi.PHI_MIN = i;
+//                Phi.PHI_MAX = i+step;
+//                Lambda.LAMBDA_MIN=j;
+//                Lambda.LAMBDA_MAX=j+step;
+//                System.out.println("PHI = ["+ Phi.PHI_MIN+", "+ Phi.PHI_MAX+"]");
+//                System.out.println("Lambda = ["+ Lambda.LAMBDA_MIN+", "+ Lambda.LAMBDA_MAX+"]");
+//                Logger.writeMsg("PHI = ["+ Phi.PHI_MIN+", "+ Phi.PHI_MAX+"]");
+//                Logger.writeMsg("Lambda = ["+ Lambda.LAMBDA_MIN+", "+ Lambda.LAMBDA_MAX+"]");
 
-//                Constants.MUTATION_CHANCE = i;
-//                Constants.MUTATION_VALUE = j;
-//                System.out.println("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
-//                Logger.writeMsg("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
+                Constants.MUTATION_CHANCE = i;
+                Constants.MUTATION_VALUE = j;
+                System.out.println("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
+                Logger.writeMsg("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
 
 
                 swarmInfo = new Info();
@@ -236,13 +237,9 @@ public class SwarmTest {
 //                Logger.writeMsg("PHI = ["+ Phi.PHI_MIN+", "+ Phi.PHI_MAX+"]");
 //                Logger.writeMsg("Lambda = ["+ Lambda.LAMBDA_MIN+", "+ Lambda.LAMBDA_MAX+"]");
 //
-////                Constants.MUTATION_CHANCE = i;
-////                Constants.MUTATION_VALUE = j;
-////                System.out.println("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
-////                Logger.writeMsg("chance = " + Constants.MUTATION_CHANCE + "   val= " + Constants.MUTATION_VALUE);
-//
-//                swarmInfo =new Info();
-//                parallel(getSwarmFunction(),swarmInfo);
+//                swarmInfo = new Info();
+//                fullSearchInfo = new Info();
+//                parallel(getFullSwarmFunction(),swarmInfo);
 //                logStat();
 //            }
 //        }
@@ -299,6 +296,7 @@ public class SwarmTest {
                     swarmInfo.addValue(swarmProfit);
 
                     if (swarmProfit != fullSearchProfit){
+                        System.out.println("worse:"+(swarmProfit<fullSearchProfit));
                         swarmInfo.addError();
                     }
                 }

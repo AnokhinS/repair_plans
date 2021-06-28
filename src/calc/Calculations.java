@@ -10,6 +10,11 @@ import java.util.*;
 public class Calculations {
 
     public static double calcProfit(double[] weights, List<Well> wells){
+        for (int i = 0; i < weights.length; i++) {
+            if (weights[i] <0 ){
+                int k =3;
+            }
+        }
         return calcProfit(PlanUtils.createPlan(weights,wells),wells);
     }
 

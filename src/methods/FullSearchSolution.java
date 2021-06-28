@@ -25,7 +25,8 @@ public class FullSearchSolution {
         int[] bestPlan = null;
         List<int[]> combinations = Combination.getCombinations(wells.size());
         for (int[] c : combinations){
-            double profit = Calculations.calcProfit(PlanUtils.createPlan(wellSequence(c)),wells);
+            List<Well> wells = wellSequence(c);
+            double profit = Calculations.calcProfit(PlanUtils.createPlan(wells), this.wells);
             if(profit > res){
                 bestPlan = c;
                 res = profit;

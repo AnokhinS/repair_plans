@@ -49558,3 +49558,1052 @@ Swarm Info  Info{value=753797.0, time=20523.0, errors=20}
 Full Info  Info{value=754364.0, time=0.0, errors=0}
 PHI = [0.2, 0.4]
 Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754252.0, time=20827.0, errors=5}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.2, 0.4]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753693.0, time=20240.0, errors=23}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.4, 0.6000000000000001]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753998.0, time=20151.0, errors=14}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.6000000000000001, 0.8]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754103.0, time=20430.0, errors=8}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753984.0, time=19934.0, errors=16}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.2, 0.4]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753637.0, time=19996.0, errors=20}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.4, 0.6000000000000001]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753916.0, time=20322.0, errors=15}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.6000000000000001, 0.8]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753994.0, time=20065.0, errors=17}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754037.0, time=20143.0, errors=14}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.2, 0.4]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753788.0, time=20211.0, errors=24}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.4, 0.6000000000000001]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753559.0, time=19970.0, errors=19}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.6000000000000001, 0.8]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753857.0, time=20113.0, errors=17}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753890.0, time=20063.0, errors=24}
+Full Info  Info{value=754364.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.0, 0.2]
+PHI = [0.0, 0.2]
+Lambda = [0.0, 0.2]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=719309.0, time=18823.0, errors=83}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.2, 0.4]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=719310.0, time=19297.0, errors=79}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.4, 0.6000000000000001]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720126.0, time=19465.0, errors=66}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.6000000000000001, 0.8]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720938.0, time=19342.0, errors=63}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721676.0, time=19276.0, errors=55}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.2, 0.4]
+Lambda = [0.0, 0.2]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=718428.0, time=19125.0, errors=77}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.2, 0.4]
+Lambda = [0.2, 0.4]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720063.0, time=19115.0, errors=64}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.2, 0.4]
+Lambda = [0.4, 0.6000000000000001]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720496.0, time=19169.0, errors=62}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.2, 0.4]
+Lambda = [0.6000000000000001, 0.8]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720480.0, time=20205.0, errors=57}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.2, 0.4]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720999.0, time=19833.0, errors=56}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.0, 0.2]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=716608.0, time=19808.0, errors=84}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.2, 0.4]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721402.0, time=19804.0, errors=66}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.4, 0.6000000000000001]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720647.0, time=19413.0, errors=67}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.6000000000000001, 0.8]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720034.0, time=19446.0, errors=68}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.4, 0.6000000000000001]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721275.0, time=19642.0, errors=57}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.0, 0.2]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=717402.0, time=19541.0, errors=85}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.2, 0.4]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720983.0, time=19872.0, errors=64}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.4, 0.6000000000000001]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720068.0, time=19799.0, errors=69}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.6000000000000001, 0.8]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720321.0, time=19838.0, errors=67}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.6000000000000001, 0.8]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720870.0, time=19839.0, errors=64}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.0, 0.2]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=718482.0, time=19750.0, errors=79}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.2, 0.4]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=718168.0, time=19356.0, errors=78}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.4, 0.6000000000000001]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720885.0, time=19255.0, errors=72}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.6000000000000001, 0.8]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720945.0, time=19231.0, errors=65}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.8, 1.0]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721254.0, time=19313.0, errors=65}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.0]
+Lambda = [0.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720160.0, time=19326.0, errors=70}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.0]
+Lambda = [0.2, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720956.0, time=19248.0, errors=57}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.0]
+Lambda = [0.4, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720502.0, time=19494.0, errors=69}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.0]
+Lambda = [0.6000000000000001, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721816.0, time=19515.0, errors=50}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.0]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721277.0, time=19486.0, errors=52}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.0]
+Lambda = [1.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=714976.0, time=19318.0, errors=94}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721784.0, time=19524.0, errors=54}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.2, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720574.0, time=19610.0, errors=64}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.4, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720879.0, time=19475.0, errors=62}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.6000000000000001, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721750.0, time=19463.0, errors=56}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721423.0, time=19587.0, errors=62}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.2]
+Lambda = [1.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=714626.0, time=19566.0, errors=94}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.4]
+Lambda = [0.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720893.0, time=19435.0, errors=67}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.4]
+Lambda = [0.2, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720174.0, time=19394.0, errors=65}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.4]
+Lambda = [0.4, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720911.0, time=19237.0, errors=64}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.4]
+Lambda = [0.6000000000000001, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721028.0, time=19478.0, errors=56}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.4]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721073.0, time=19477.0, errors=61}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.4]
+Lambda = [1.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=714835.0, time=19656.0, errors=95}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.6000000000000001]
+Lambda = [0.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720532.0, time=19386.0, errors=65}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.6000000000000001]
+Lambda = [0.2, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721008.0, time=19321.0, errors=66}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.6000000000000001]
+Lambda = [0.4, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720628.0, time=19462.0, errors=61}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.6000000000000001]
+Lambda = [0.6000000000000001, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721646.0, time=19348.0, errors=54}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.6000000000000001]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720997.0, time=19546.0, errors=55}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.6000000000000001]
+Lambda = [1.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=716114.0, time=19458.0, errors=91}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.8]
+Lambda = [0.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721177.0, time=19533.0, errors=63}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.8]
+Lambda = [0.2, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720906.0, time=19484.0, errors=56}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.8]
+Lambda = [0.4, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720926.0, time=19270.0, errors=59}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.8]
+Lambda = [0.6000000000000001, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721516.0, time=19260.0, errors=57}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.8]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=721591.0, time=19322.0, errors=56}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 0.8]
+Lambda = [1.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=715118.0, time=19213.0, errors=90}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 1.0]
+Lambda = [0.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720193.0, time=19257.0, errors=72}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 1.0]
+Lambda = [0.2, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720868.0, time=19225.0, errors=62}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 1.0]
+Lambda = [0.4, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720808.0, time=19389.0, errors=60}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 1.0]
+Lambda = [0.6000000000000001, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=720429.0, time=19407.0, errors=65}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 1.0]
+Lambda = [0.8, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=722110.0, time=19456.0, errors=52}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+PHI = [0.0, 1.0]
+Lambda = [1.0, 1.0]
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=715999.0, time=19294.0, errors=88}
+Full Info  Info{value=724125.0, time=0.0, errors=0}
+chance = 0.0   val= 0.0
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=779609.0, time=19143.0, errors=51}
+Full Info  Info{value=782544.0, time=0.0, errors=0}
+chance = 0.0   val= 0.2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=779966.0, time=20080.0, errors=60}
+Full Info  Info{value=782544.0, time=0.0, errors=0}
+chance = 0.0   val= 0.4
+chance = 0.2   val= 0.2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752309.0, time=19477.0, errors=58}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.2   val= 0.4
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752783.0, time=20041.0, errors=42}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.2   val= 0.6000000000000001
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754001.0, time=20091.0, errors=41}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.2   val= 0.8
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753362.0, time=20109.0, errors=35}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.2   val= 1.0
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753977.0, time=20088.0, errors=40}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.4   val= 0.2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752537.0, time=20126.0, errors=50}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.4   val= 0.4
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752260.0, time=20126.0, errors=50}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.4   val= 0.6000000000000001
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754181.0, time=20238.0, errors=40}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.4   val= 0.8
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=744727.0, time=20743.0, errors=32}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.4   val= 1.0
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754256.0, time=20839.0, errors=33}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.6000000000000001   val= 0.2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752755.0, time=21417.0, errors=51}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.6000000000000001   val= 0.4
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753619.0, time=20404.0, errors=41}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.6000000000000001   val= 0.6000000000000001
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752627.0, time=20436.0, errors=48}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.6000000000000001   val= 0.8
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753210.0, time=20174.0, errors=38}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.6000000000000001   val= 1.0
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754394.0, time=20263.0, errors=24}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.8   val= 0.2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752953.0, time=20317.0, errors=49}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.8   val= 0.4
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753811.0, time=20288.0, errors=33}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.8   val= 0.6000000000000001
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754587.0, time=20282.0, errors=34}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.8   val= 0.8
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754753.0, time=20352.0, errors=29}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 0.8   val= 1.0
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754281.0, time=20169.0, errors=26}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 1.0   val= 0.2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752858.0, time=20841.0, errors=48}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 1.0   val= 0.4
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=752955.0, time=20806.0, errors=44}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 1.0   val= 0.6000000000000001
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=753709.0, time=20312.0, errors=33}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 1.0   val= 0.8
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=754616.0, time=20276.0, errors=27}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+chance = 1.0   val= 1.0
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=755368.0, time=20462.0, errors=15}
+Full Info  Info{value=755699.0, time=0.0, errors=0}
+i=1
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=730574.0, time=1032.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=730841.0, time=897.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=5
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=731084.0, time=2066.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=731174.0, time=3869.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=731174.0, time=7683.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=50
+i=1
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=725288.0, time=19862.0, errors=15}
+Full Info  Info{value=725646.0, time=0.0, errors=0}
+i=2
+i=1
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=740565.0, time=19691.0, errors=17}
+Full Info  Info{value=741228.0, time=0.0, errors=0}
+i=2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=740829.0, time=20795.0, errors=12}
+Full Info  Info{value=1482456.0, time=0.0, errors=0}
+i=5
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=741164.0, time=22157.0, errors=4}
+Full Info  Info{value=2223684.0, time=0.0, errors=0}
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=741221.0, time=23937.0, errors=2}
+Full Info  Info{value=2964912.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=741228.0, time=27310.0, errors=0}
+Full Info  Info{value=3706140.0, time=0.0, errors=0}
+i=50
+i=1
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=746614.0, time=20972.0, errors=28}
+Full Info  Info{value=747555.0, time=0.0, errors=0}
+i=2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=747342.0, time=22020.0, errors=13}
+Full Info  Info{value=747555.0, time=0.0, errors=0}
+i=5
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=747488.0, time=22647.0, errors=5}
+Full Info  Info{value=747555.0, time=0.0, errors=0}
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=747530.0, time=24025.0, errors=3}
+Full Info  Info{value=747555.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=747555.0, time=28053.0, errors=0}
+Full Info  Info{value=747555.0, time=0.0, errors=0}
+i=50
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=747555.0, time=39539.0, errors=0}
+Full Info  Info{value=747555.0, time=0.0, errors=0}
+i=1
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=763313.0, time=1090.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=2
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=763985.0, time=912.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=5
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=764406.0, time=2026.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=764390.0, time=3792.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=764421.0, time=7486.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=50
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=764421.0, time=18634.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=724340.0, time=8262.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=724344.0, time=14375.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=50
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=724344.0, time=32321.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=100
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=724344.0, time=62825.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=747645.0, time=27233.0, errors=1}
+Full Info  Info{value=747648.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=747648.0, time=34581.0, errors=0}
+Full Info  Info{value=747648.0, time=0.0, errors=0}
+i=50
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=735961.0, time=19854.0, errors=14}
+Full Info  Info{value=736736.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=736537.0, time=20223.0, errors=12}
+Full Info  Info{value=736736.0, time=0.0, errors=0}
+i=50
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=736721.0, time=21352.0, errors=5}
+Full Info  Info{value=736736.0, time=0.0, errors=0}
+i=100
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=736731.0, time=22952.0, errors=2}
+Full Info  Info{value=736736.0, time=0.0, errors=0}
+i=500
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=710756.0, time=36817.0, errors=2}
+Full Info  Info{value=710763.0, time=0.0, errors=0}
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=748826.0, time=1138.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=756152.0, time=947.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=50
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=756498.0, time=1899.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=100
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=756494.0, time=3419.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=500
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=756529.0, time=15480.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+i=10
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=717321.0, time=20312.0, errors=27}
+Full Info  Info{value=711250.0, time=0.0, errors=0}
+i=20
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=763384.0, time=19852.0, errors=24}
+Full Info  Info{value=764798.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=722204.0, time=19998.0, errors=10}
+Full Info  Info{value=722354.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=824769.0, time=588411.0, errors=4}
+Full Info  Info{value=824842.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=878418.0, time=576198.0, errors=24}
+Full Info  Info{value=879071.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=848430.0, time=579276.0, errors=4}
+Full Info  Info{value=848473.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=879820.0, time=529832.0, errors=34}
+Full Info  Info{value=880520.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=860834.0, time=589104.0, errors=53}
+Full Info  Info{value=862927.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=848534.0, time=597031.0, errors=8}
+Full Info  Info{value=848657.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=838706.0, time=597448.0, errors=0}
+Full Info  Info{value=838706.0, time=0.0, errors=0}
+Naive Info  Info{value=0.0, time=0.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=8445999.0, time=6280146.0, errors=35}
+Full Info  Info{value=8446384.0, time=0.0, errors=0}
+Naive Info  Info{value=1.4778719E7, time=157.0, errors=0}
+Random Info  Info{value=1.4672855E7, time=3367.0, errors=0}
+Swarm Info  Info{value=1.4923865E7, time=193748.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=4604238.0, time=101.0, errors=0}
+Random Info  Info{value=4655584.0, time=752.0, errors=0}
+Swarm Info  Info{value=4670373.0, time=1302.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=4680943.0, time=130.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=4728569.0, time=87146.0, errors=0}
+Full Info  Info{value=4729774.0, time=399015.0, errors=0}
+Naive Info  Info{value=5079006.0, time=118.0, errors=0}
+Random Info  Info{value=5102417.0, time=601.0, errors=0}
+Swarm Info  Info{value=5097853.0, time=1227.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=4851649.0, time=2.0, errors=0}
+Random Info  Info{value=4873113.0, time=241.0, errors=0}
+Swarm Info  Info{value=4878537.0, time=1147.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=4737185.0, time=2.0, errors=0}
+Random Info  Info{value=4768191.0, time=242.0, errors=0}
+Swarm Info  Info{value=4788072.0, time=1160.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=4469693.0, time=3.0, errors=0}
+Random Info  Info{value=4539396.0, time=247.0, errors=0}
+Swarm Info  Info{value=4562036.0, time=1176.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=4287895.0, time=2.0, errors=0}
+Random Info  Info{value=4403802.0, time=256.0, errors=0}
+Swarm Info  Info{value=4445481.0, time=1191.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=4005818.0, time=3.0, errors=0}
+Random Info  Info{value=4198342.0, time=244.0, errors=0}
+Swarm Info  Info{value=4278244.0, time=1207.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=3835041.0, time=2.0, errors=0}
+Random Info  Info{value=4116954.0, time=242.0, errors=0}
+Swarm Info  Info{value=4230363.0, time=1219.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=3592805.0, time=3.0, errors=0}
+Random Info  Info{value=3966464.0, time=242.0, errors=0}
+Swarm Info  Info{value=4122828.0, time=1223.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=3440230.0, time=3.0, errors=0}
+Random Info  Info{value=3907590.0, time=242.0, errors=0}
+Swarm Info  Info{value=4121803.0, time=1265.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2004147.0, time=96.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=2012385.0, time=10733.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1942982.0, time=4.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1954996.0, time=14639.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1882139.0, time=4.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1897304.0, time=14205.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1794304.0, time=4.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1817331.0, time=14697.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1752990.0, time=2.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1799343.0, time=14920.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1641472.0, time=3.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1721235.0, time=13597.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1706893.0, time=103.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1708574.0, time=10494.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1805561.0, time=4.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1810961.0, time=11399.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1848903.0, time=3.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1860905.0, time=12700.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1857934.0, time=3.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1873824.0, time=13762.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1849520.0, time=4.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1875301.0, time=14717.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1831573.0, time=4.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1874269.0, time=14713.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1816567.0, time=4.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1874628.0, time=15304.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1799815.0, time=3.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1873034.0, time=14654.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1789528.0, time=4.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=1874526.0, time=14849.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1677485.0, time=101.0, errors=0}
+Random Info  Info{value=1679878.0, time=31226.0, errors=0}
+Swarm Info  Info{value=1680677.0, time=58131.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1779710.0, time=3.0, errors=0}
+Random Info  Info{value=1784934.0, time=33069.0, errors=0}
+Swarm Info  Info{value=1786921.0, time=64836.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2741715.0, time=129.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2912163.0, time=27.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2972062.0, time=20.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2978206.0, time=9.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2959116.0, time=14.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2931867.0, time=11.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2903812.0, time=9.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2883856.0, time=11.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=2870175.0, time=9.0, errors=0}
+Random Info  Info{value=0.0, time=0.0, errors=0}
+Swarm Info  Info{value=0.0, time=0.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=676891.0, time=81.0, errors=0}
+Random Info  Info{value=677283.0, time=956.0, errors=0}
+Swarm Info  Info{value=677497.0, time=489.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=711413.0, time=0.0, errors=0}
+Random Info  Info{value=714379.0, time=419.0, errors=0}
+Swarm Info  Info{value=714906.0, time=427.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=725556.0, time=0.0, errors=0}
+Random Info  Info{value=730582.0, time=414.0, errors=0}
+Swarm Info  Info{value=731079.0, time=428.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=726955.0, time=0.0, errors=0}
+Random Info  Info{value=735235.0, time=415.0, errors=0}
+Swarm Info  Info{value=736784.0, time=463.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=723856.0, time=0.0, errors=0}
+Random Info  Info{value=734616.0, time=417.0, errors=0}
+Swarm Info  Info{value=738114.0, time=488.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=718857.0, time=1.0, errors=0}
+Random Info  Info{value=731318.0, time=424.0, errors=0}
+Swarm Info  Info{value=738250.0, time=511.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=713174.0, time=0.0, errors=0}
+Random Info  Info{value=726739.0, time=439.0, errors=0}
+Swarm Info  Info{value=738303.0, time=516.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=707978.0, time=0.0, errors=0}
+Random Info  Info{value=721180.0, time=421.0, errors=0}
+Swarm Info  Info{value=738207.0, time=504.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=704176.0, time=0.0, errors=0}
+Random Info  Info{value=714213.0, time=419.0, errors=0}
+Swarm Info  Info{value=737968.0, time=495.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1328110.0, time=86.0, errors=0}
+Random Info  Info{value=1329139.0, time=17171.0, errors=0}
+Swarm Info  Info{value=1329926.0, time=17506.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1400280.0, time=2.0, errors=0}
+Random Info  Info{value=1405496.0, time=17129.0, errors=0}
+Swarm Info  Info{value=1406218.0, time=17408.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1428449.0, time=2.0, errors=0}
+Random Info  Info{value=1434369.0, time=17366.0, errors=0}
+Swarm Info  Info{value=1438717.0, time=19389.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1429676.0, time=2.0, errors=0}
+Random Info  Info{value=1437139.0, time=17961.0, errors=0}
+Swarm Info  Info{value=1446311.0, time=20800.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1425469.0, time=2.0, errors=0}
+Random Info  Info{value=1432490.0, time=17629.0, errors=0}
+Swarm Info  Info{value=1447312.0, time=19535.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1413237.0, time=2.0, errors=0}
+Random Info  Info{value=1424314.0, time=17772.0, errors=0}
+Swarm Info  Info{value=1446324.0, time=20708.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1399763.0, time=2.0, errors=0}
+Random Info  Info{value=1413658.0, time=18199.0, errors=0}
+Swarm Info  Info{value=1445953.0, time=21197.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1388796.0, time=2.0, errors=0}
+Random Info  Info{value=1400751.0, time=17597.0, errors=0}
+Swarm Info  Info{value=1445896.0, time=21459.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
+Naive Info  Info{value=1381810.0, time=2.0, errors=0}
+Random Info  Info{value=1387096.0, time=17629.0, errors=0}
+Swarm Info  Info{value=1445995.0, time=20326.0, errors=0}
+Full Info  Info{value=0.0, time=0.0, errors=0}
